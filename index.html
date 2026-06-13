@@ -31,7 +31,10 @@
         .map-iframe-box { width: 100%; height: 300px; border-radius: 15px; overflow: hidden; border: 1px solid #eaeaea; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .map-iframe-box iframe { width: 100%; height: 100%; border: 0; }
 
-        
+                /* Специальный стиль для первой кнопки-каталога */
+        .catalog-btn { display: block; background-color: #c4967a; color: #ffffff !important; text-decoration: none; padding: 16px 20px; border-radius: 30px; font-size: 16px; font-weight: 500; letter-spacing: 1px; margin: 20px auto 15px auto; max-width: 560px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: background-color 0.2s; }
+        .catalog-btn:hover { background-color: #b38569; text-decoration: none !important; }
+
        
     </style>
 </head>
@@ -47,9 +50,8 @@
     <div class="button-container">
 
         <!-- Кнопка 1: КАТАЛОГ -->
-        <a href="torty.html" class="tap-link">
-            🎛️ Каталог тортов
-        </a>
+       <a href="torty.html" class="catalog-btn">🎛️ Каталог тортов</a>
+
 
         <!-- Текстовая подпись -->
         <div class="menu-label">сделать заказ</div>
