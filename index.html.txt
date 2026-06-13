@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irene Cake | Торты на заказ Южно-Сахалинск</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #ffffff; margin: 0; padding: 40px 20px; text-align: center; color: #333333; }
+        h1 { font-size: 32px; font-weight: 300; letter-spacing: 3px; margin-bottom: 50px; text-transform: lowercase; }
+        .vitrina { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1200px; margin: 0 auto; }
+        .item { background: #ffffff; width: 320px; text-align: left; }
+        .item img { width: 100%; height: 320px; object-fit: cover; display: block; margin-bottom: 15px; border: 1px solid #eaeaea; }
+        .item h3 { font-size: 18px; font-weight: 400; margin: 0 0 8px 0; }
+        .item p { font-size: 14px; color: #777777; margin: 0 0 12px 0; line-height: 1.4; }
+        .price { font-weight: 500; font-size: 18px; color: #222222; margin-bottom: 15px; }
+        .btn { display: block; background: #000000; color: #ffffff; padding: 12px 0; text-decoration: none; font-size: 13px; letter-spacing: 1px; text-align: center; font-weight: 500; }
+        .btn:hover { background: #333333; }
+    </style>
+</head>
+<body>
+
+        <!-- Название вашего сайта сверху -->
+    <h1>IRINA KIM</h1>
+    <h2 style="font-size: 16px; font-weight: 300; letter-spacing: 2px; margin-top: -40px; margin-bottom: 50px; color: #777777; text-transform: uppercase;">Интернет витрина</h2>
+
+
+    <div class="vitrina">
+
+        <!-- КАРТОЧКА ТОРТА №1 -->
+        <div class="item">
+            <img src="tort1.jpg" alt="Торт на заказ">
+            <h3>Бенто-торт «My Little Pony»</h3>
+            <p>Нежный ванильный бисквит, клубнично-муссовая начинка, яркий праздничный декор.</p>
+            <div class="price">3 000 ₽</div>
+            <a href="https://wa.me/79621239209" class="btn">ЗАКАЗАТЬ В WHATSAPP</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
