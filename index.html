@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRINA KIM | Интернет витрина Южно-Сахалинск</title>
     
-    <!-- Подключаем дизайнерский шрифт из библиотеки Google Fonts -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+   
+
 
     <style>
+         <!-- Подключаем дизайнерский шрифт из библиотеки Google Fonts -->
+            @font-face {
+            font-family: 'Blessing Splash';
+            src: url('BlessingSplash.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
         /* Общие настройки чистого белого фона */
         body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #ffffff; margin: 0; padding: 40px 0; text-align: center; color: #333333; }
         
@@ -19,14 +24,15 @@
         
         /* Точная копия стиля шрифта Blessing Splash с вашей картинки */
         .header-box h1 { 
-            font-family: 'Montserrat Alternates', sans-serif;
-            font-style: italic; /* Делает шрифт наклонным рукописным */
+            font-family: 'Blessing Splash', sans-serif;
+
+            
             font-size: 52px; 
             font-weight: 300; 
             margin: 0 0 5px 0; 
             color: #444341; /* Оригинальный темно-серый графитовый цвет */
             text-transform: none; /* Оставляем буквы строчными, как в iIrene Kim */
-            letter-spacing: -1.5px; /* Сближаем буквы для эффекта связного почерка */
+            letter-spacing: 0; /* Сближаем буквы для эффекта связного почерка */
         }
         .header-box h2 { font-size: 13px; font-weight: 400; letter-spacing: 3px; margin: 0; color: #8c767a; text-transform: uppercase; }
         
