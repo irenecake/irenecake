@@ -4,47 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRINA KIM | Интернет витрина Южно-Сахалинск</title>
+    
+    <!-- Подключаем шрифт-двойник с идеальной поддержкой кириллицы -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
     <style>
         /* Общие настройки чистого белого фона */
         body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #ffffff; margin: 0; padding: 40px 0; text-align: center; color: #333333; }
         
         /* Розовая шапка сверху */
         .header-box { background-color: #fcf0f2; margin: -40px 0 30px 0; padding: 40px 20px; border-bottom: 1px solid #f3d7dd; }
-        .header-box h1 { font-size: 32px; font-weight: 300; letter-spacing: 3px; margin: 0 0 10px 0; color: #8c767a; text-transform: uppercase; }
+        
+        /* Идеальный рукописный шрифт как на картинке, но для кириллицы */
+        .header-box h1 { 
+            font-family: 'Caveat', cursive; 
+            font-size: 58px; /* Рукописные шрифты тоньше, поэтому увеличили размер */
+            font-weight: 500; 
+            margin: 0 0 5px 0; 
+            color: #4a4a4a; /* Сделали цвет чуть графитовее, точь-в-точь как на вашем скрине */
+            text-transform: none; /* Убираем капс, чтобы буквы красиво соединялись */
+            letter-spacing: 1px;
+        }
         .header-box h2 { font-size: 14px; font-weight: 400; letter-spacing: 2px; margin: 0; color: #8c767a; text-transform: uppercase; }
         
-        /* Контейнер для кнопок меню (как на Таплинке) */
+        /* Контейнер для кнопок меню */
         .button-container { max-width: 600px; margin: 0 auto; padding: 0 20px; }
         
-              
-               /* Розовые ободки-плашки на всю ширину, как каталог тортов */
+        /* Розовые ободки-плашки на всю ширину */
         .menu-label { display: block; background-color: #fcf0f2; color: #8c767a; font-size: 14px; letter-spacing: 1px; padding: 16px 20px; border-radius: 30px; margin: 30px auto 15px auto; text-transform: lowercase; font-weight: 400; border: 1px solid #f3d7dd; max-width: 520px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
-
         
         /* Ссылки в виде чистого кликабельного текста */
         .tap-link { display: block; color: #c4967a; text-decoration: none; padding: 10px 20px; font-size: 18px; font-weight: 500; letter-spacing: 1px; margin-bottom: 5px; transition: color 0.2s; }
         .tap-link:hover { color: #b38569; text-decoration: underline; }
-
                 
         /* Правила для блока контактов и карты */
-        .map-container { max-width: 560px; margin: 30px auto 0 auto; padding: 0 20px; text-align: left; }
+        .map-container { max-width: 560px; margin: 40px auto 0 auto; padding: 0 20px; text-align: left; }
         .map-title { font-size: 14px; letter-spacing: 1px; color: #8c767a; text-transform: lowercase; font-weight: 300; text-align: center; margin-bottom: 15px; }
         .map-address { font-size: 16px; font-weight: 400; color: #333333; text-align: center; margin-bottom: 20px; line-height: 1.4; }
-        .map-iframe-box { width: 100%; height: 300px; border-radius: 15px; overflow: hidden; border: 1px solid #eaeaea; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .map-iframe-box iframe { width: 100%; height: 100%; border: 0; }
+        .map-frame-box { width: 100%; height: 300px; border-radius: 15px; overflow: hidden; border: 1px solid #eaeaea; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .map-frame-box iframe { width: 100%; height: 100%; border: 0; }
 
-                /* Специальный стиль для первой кнопки-каталога */
+        /* Специальный стиль для первой кнопки-каталога */
         .catalog-btn { display: block; background-color: #c4967a; color: #ffffff !important; text-decoration: none; padding: 16px 20px; border-radius: 30px; font-size: 16px; font-weight: 500; letter-spacing: 1px; margin: 20px auto 15px auto; max-width: 560px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: background-color 0.2s; }
         .catalog-btn:hover { background-color: #b38569; text-decoration: none !important; }
-
-       
     </style>
 </head>
 <body>
 
-    <!-- Розовая шапка -->
+    <!-- Розовая шапка с новым шрифтом -->
     <div class="header-box">
-        <h1>ИРИНА КИМ</h1>
+        <h1>Ирина Ким</h1>
         <h2>Интернет витрина</h2>
     </div>
 
@@ -52,14 +63,13 @@
     <div class="button-container">
 
         <!-- Кнопка 1: КАТАЛОГ -->
-       <a href="torty.html" class="catalog-btn">🎛️ Каталог тортов</a>
-
+        <a href="torty.html" class="catalog-btn">🎛️ Каталог тортов</a>
 
         <!-- Текстовая подпись -->
         <div class="menu-label">сделать заказ</div>
 
         <!-- Кнопка 2: СВЯЗЬ В MAX -->
-        <a href="https://max.ru/u/f9LHodD0cOK7BQQ9fszgBy5awdpRbpHjKFKo4jRHAMQfjqHdYPGz2agdomg" class="tap-link">
+        <a href="https://max.ru" class="tap-link" target="_blank">
             📞 +7 (962) 123-92-09 MAX
         </a>
 
@@ -67,19 +77,24 @@
         <div class="menu-label">мои работы/отзывы</div>
         
         <!-- Кнопка 3: INSTAGRAM -->
-        <a href="https://instagram.com" class="tap-link">
+        <a href="https://instagram.com" class="tap-link" target="_blank">
             📸 Instagram
         </a>
-         <div class="menu-label">где забрать заказ</div>
-        <a href="https://ya.ru" target="_blank" class="tap-link">📍 ЖК «Аралия» на карте</a>
-    </div>
-    
+
+        <!-- Текстовая подпись -->
+        <div class="menu-label">где забрать заказ</div>
         
+        <a href="https://yandex.ru" target="_blank" class="tap-link">📍 ЖК «Аралия» на карте</a>
+    </div>
 
-
-
-</div>
-
+    <!-- Интерактивная карта -->
+    <div class="map-container">
+        <div class="map-title">интерактивная карта</div>
+        <div class="map-address">Южно-Сахалинск, ул. Комсомольская, ЖК «Аралия»</div>
+        <div class="map-frame-box">
+            <iframe src="https://yandex.ru" allowfullscreen="true"></iframe>
+        </div>
+    </div>
 
 </body>
 </html>
